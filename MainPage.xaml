@@ -9,17 +9,24 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-         <!--TextBlocks-->
-        <TextBlock HorizontalAlignment="Left" Margin="553,47,0,0" Text="StatTrack" TextWrapping="Wrap" VerticalAlignment="Top" Height="219" Width="420" SelectionChanged="TextBlock_SelectionChanged" FontSize="100"/>
-        <TextBlock HorizontalAlignment="Left" Margin="287,457,0,0" Text="Username :" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged_1" FontSize=" 40"/>
+        <!--TextBlocks-->
+        <TextBlock HorizontalAlignment="Left" Margin="763,67,0,0" Text="StatTrack" TextWrapping="Wrap" VerticalAlignment="Top" Height="219" Width="420" SelectionChanged="TextBlock_SelectionChanged" FontSize="100"/>
+        <TextBlock HorizontalAlignment="Left" Margin="662,465,0,0" Text="Username :" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged_1" FontSize=" 40"/>
+        <TextBlock Name="UserNameDisplay"  HorizontalAlignment="Left" Margin="928,609,0,0" Text="Stats Will show here." TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock Name="KillsDisplay"  HorizontalAlignment="Left" Margin="928,637,0,0" Text="Kills" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="882,637,0,0" Text="Kills : " TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock Name="DeathDisplay"  HorizontalAlignment="Left" Margin="928,661,0,0" Text="Death" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="870,661,0,0" Text="Death : " TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="1.75,0.474"/>
+        <TextBlock Name="GamesPlayedDisplay"  HorizontalAlignment="Left" Margin="928,681,0,0" Text="Character" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="786,681,0,0" Text="Character Last used :" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <!--TextBoxes-->
-        <TextBox Name="Username" HorizontalAlignment="Left" Margin="495,441,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="86" Width="235" TextChanged="UsernameInput"/>
+        <TextBox Name="Username" HorizontalAlignment="Left" Margin="870,449,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="86" Width="235" TextChanged="UsernameInput"/>
         <!--Buttons-->
-        <Button Content="Search" Margin="582,550,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-       <!-- Checkboxes-->
-        <CheckBox Content="PC" Margin="735,437,0,0" VerticalAlignment="Top"/>
-        <CheckBox Content="PlayStation 4" Margin="735,469,0,0" VerticalAlignment="Top"/>
-        <CheckBox Content="Xbox" Margin="735,500,0,0" VerticalAlignment="Top"/>
+        <Button Content="Search" Margin="957,558,0,0" VerticalAlignment="Top" Click="Button_Click_Search"/>
+        <!-- Checkboxes-->
+        <CheckBox Content="PC" Margin="1110,445,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="PlayStation 4" Margin="1110,477,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="Xbox" Margin="1110,508,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Page>

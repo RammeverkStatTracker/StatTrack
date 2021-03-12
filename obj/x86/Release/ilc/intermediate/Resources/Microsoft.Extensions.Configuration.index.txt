@@ -1,0 +1,4 @@
+Microsoft.Extensions.Configuration, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60
+  FxResources.Microsoft.Extensions.Configuration.SR.resources
+  Microsoft.Extensions.Configuration.Resources.Strings.resources
+  ILLink.Substitutions.xml

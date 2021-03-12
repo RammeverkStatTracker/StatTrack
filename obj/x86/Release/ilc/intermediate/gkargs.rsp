@@ -1,0 +1,8 @@
+﻿"C:\Users\Bass4Nation\source\repos\StatTrack\obj\x86\Release\ilc\in\Newtonsoft.Json.dll"
+"C:\Users\Bass4Nation\source\repos\StatTrack\obj\x86\Release\ilc\in\StatTrack.exe"
+/Lib:"C:\Users\Bass4Nation\source\repos\StatTrack\obj\x86\Release\ilc\in"
+/Lib:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.native.compiler\2.2.9-rel-29512-01\tools\x86\ilc\lib\Private"
+/WinMD:"C:\Users\Bass4Nation\source\repos\StatTrack\obj\x86\Release\ilc\in\WinMetadata\Windows.winmd"
+/VSTelemetrySessionSettings:"{\"IsOptedIn\":true,\"HostName\":\"Dev14\",\"AppInsightsInstrumentationKey\":\"f144292e-e3b2-4011-ac90-20e5c03fbce5\",\"AsimovInstrumentationKey\":\"AIF-312cbd79-9dbb-4c48-a7da-3cc2a931cb70\",\"AppId\":1001,\"UserId\":\"b31534aa-ee0f-4d2e-8e98-83b7d1ee82a5\",\"Id\":\"c527d794-32cf-4457-9988-0fa4be6ad8cd\",\"ProcessStartTime\":637510718120913302}"
+/RdXmlPath:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\microsoft.net.native.compiler\2.2.9-rel-29512-01\tools\LibraryXML"
+/RunOnlyPreDR

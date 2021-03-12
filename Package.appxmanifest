@@ -5,6 +5,7 @@
   xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
   xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
   IgnorableNamespaces="uap mp">
+  
 
   <Identity
     Name="81377601-cd42-420a-8612-11e77ceac61f"
