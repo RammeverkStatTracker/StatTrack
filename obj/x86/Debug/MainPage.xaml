@@ -10,23 +10,27 @@
 
     <Grid>
         <!--TextBlocks-->
-        <TextBlock x:ConnectionId='2' HorizontalAlignment="Left" Margin="763,67,0,0" Text="StatTrack" TextWrapping="Wrap" VerticalAlignment="Top" Height="219" Width="420"                                               FontSize="100"/>
-        <TextBlock x:ConnectionId='3' HorizontalAlignment="Left" Margin="662,465,0,0" Text="Username :" TextWrapping="Wrap" VerticalAlignment="Top"                                                 FontSize=" 40"/>
-        <TextBlock x:ConnectionId='4' Name="UserNameDisplay"  HorizontalAlignment="Left" Margin="928,609,0,0" Text="Stats Will show here." TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock x:ConnectionId='5' Name="KillsDisplay"  HorizontalAlignment="Left" Margin="928,637,0,0" Text="Kills" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="882,637,0,0" Text="Kills : " TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock x:ConnectionId='6' Name="DeathDisplay"  HorizontalAlignment="Left" Margin="928,661,0,0" Text="Death" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="870,661,0,0" Text="Death : " TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="1.75,0.474"/>
-        <TextBlock x:ConnectionId='7' Name="GamesPlayedDisplay"  HorizontalAlignment="Left" Margin="928,681,0,0" Text="Character" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="786,681,0,0" Text="Character Last used :" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='2' Name="FrontPageTitle" HorizontalAlignment="Left" Margin="393,255,0,0" Text="Apex Legends" TextWrapping="Wrap" VerticalAlignment="Top" Height="219" Width="733"                                               FontSize="100"/>
+        <TextBlock x:ConnectionId='3' HorizontalAlignment="Left" Margin="390,507,0,0" Text="Username :" TextWrapping="Wrap" VerticalAlignment="Top"                                                 FontSize=" 40"/>
+        <TextBlock x:ConnectionId='4' Name="UserNameDisplay"  HorizontalAlignment="Left" Margin="643,694,0,0" Text="Stats Will show here." TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='5' Name="KillsDisplay"  HorizontalAlignment="Left" Margin="643,722,0,0" Text="Kills" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="597,722,0,0" Text="Kills : " TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='6' Name="DeathDisplay"  HorizontalAlignment="Left" Margin="643,746,0,0" Text="Death" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="585,746,0,0" Text="Death : " TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="1.75,0.474"/>
+        <TextBlock x:ConnectionId='7' Name="GamesPlayedDisplay"  HorizontalAlignment="Left" Margin="643,766,0,0" Text="Character" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="501,766,0,0" Text="Character Last used :" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <!--TextBoxes-->
-        <TextBox x:ConnectionId='8' Name="Username" HorizontalAlignment="Left" Margin="870,449,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="86" Width="235"                            />
+        <TextBox x:ConnectionId='8' Name="Username" HorizontalAlignment="Left" Margin="590,520,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="235"                             RenderTransformOrigin="0.511,-0.778"/>
         <!--Buttons-->
-        <Button x:ConnectionId='9' Content="Search" Margin="957,558,0,0" VerticalAlignment="Top"                            />
+        <Button x:ConnectionId='9' Content="Search" Margin="672,643,0,0" VerticalAlignment="Top"                            />
+
         <!-- Checkboxes-->
-        <CheckBox Content="PC" Margin="1110,445,0,0" VerticalAlignment="Top"/>
-        <CheckBox Content="PlayStation 4" Margin="1110,477,0,0" VerticalAlignment="Top"/>
-        <CheckBox Content="Xbox" Margin="1110,508,0,0" VerticalAlignment="Top"/>
+
+        <ComboBox x:ConnectionId='10'  x:Name="PlayerPlatform" Header="Platform" PlaceholderText="Choose a platform" Width="200" Margin="610,575,0,0"                                                    RenderTransformOrigin="3.175,3.909">
+            <x:String>Origin</x:String>
+            <x:String>Playstation 4</x:String>
+            <x:String>Xbox</x:String>
+        </ComboBox>
 
     </Grid>
 </Page>

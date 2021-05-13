@@ -9,8 +9,6 @@
 
     public partial class Datadb
     {
-        internal string Stats;
-
         [JsonProperty("data")]
         public Data Data { get; set; }
     }
