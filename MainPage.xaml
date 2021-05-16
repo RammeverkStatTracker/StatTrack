@@ -31,6 +31,10 @@
             <x:String>Playstation 4</x:String>
             <x:String>Xbox</x:String>
         </ComboBox>
+        <ComboBox  x:Name="DatabaseChoosen" Header="Database" PlaceholderText="Choose a Database" Width="200" Margin="845,575,0,0" SelectionChanged="Database_SelectionChanged" RenderTransformOrigin="3.175,3.909">
+            <x:String>Local</x:String>
+            <x:String>Online</x:String>
+        </ComboBox>
 
     </Grid>
 </Page>

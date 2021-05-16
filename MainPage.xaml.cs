@@ -14,6 +14,7 @@ namespace StatTrack
 
         private static string username;
         private static string platform;
+        private static string database;
 
         public MainPage()
         {
@@ -47,47 +48,57 @@ namespace StatTrack
             }
             else
             {
-                try
+                if(database == "Online")
                 {
-                    Debug.WriteLine(platform);
-                    string backupInfo = "No info in database or recived...";
-                    //API url with key. It takes input from username textbox and attach it to url below.
-                    Debug.WriteLine(url);
-                    var json = new WebClient().DownloadString(url); // Gets info to json from url above
+                    try
+                    {
+                        Debug.WriteLine(platform);
+                        string backupInfo = "No info in database or recived...";
+                        //API url with key. It takes input from username textbox and attach it to url below.
+                        Debug.WriteLine(url);
+                        var json = new WebClient().DownloadString(url); // Gets info to json from url above
 
-                    var allInfo = JsonConvert.DeserializeObject<Datadb>(json); //Converting info from json to objects in datadb.cs
-                    var kill = JsonConvert.DeserializeObject<Segment>(json);
-                    var legend = JsonConvert.DeserializeObject<DataMetadata>(json);
+                        var allInfo = JsonConvert.DeserializeObject<Datadb>(json); //Converting info from json to objects in datadb.cs
+                        var kill = JsonConvert.DeserializeObject<Segment>(json);
+                        var legend = JsonConvert.DeserializeObject<DataMetadata>(json);
 
-                    string userDisplay = allInfo?.Data?.PlatformInfo?.PlatformUserId ?? backupInfo; // Displaying username on the front page.
-                    string kills = kill?.Stats?.Kills?.DisplayValue ?? backupInfo; // Haven't found why yet it won't display kills yet. So this is a temp
-                    string death = kill?.Stats?.Kills?.DisplayValue ?? backupInfo;  // Haven't found why yet it won't display death yet. So this is a temp
-                    string gamesPlayed = allInfo?.Data?.Metadata?.ActiveLegendName ?? backupInfo; // Displaying last used legend(character)
+                        string userDisplay = allInfo?.Data?.PlatformInfo?.PlatformUserId ?? backupInfo; // Displaying username on the front page.
+                        string kills = kill?.Stats?.Kills?.DisplayValue ?? backupInfo; // Haven't found why yet it won't display kills yet. So this is a temp
+                        string death = kill?.Stats?.Kills?.DisplayValue ?? backupInfo;  // Haven't found why yet it won't display death yet. So this is a temp
+                        string gamesPlayed = allInfo?.Data?.Metadata?.ActiveLegendName ?? backupInfo; // Displaying last used legend(character)
 
-                    // Displaying information on the frontpage when clicked search button
-                    UserNameDisplay.Text = userDisplay;
-                    KillsDisplay.Text = kills;
-                    DeathDisplay.Text = death;
-                    GamesPlayedDisplay.Text = gamesPlayed;
+                        // Displaying information on the frontpage when clicked search button
+                        UserNameDisplay.Text = userDisplay;
+                        KillsDisplay.Text = kills;
+                        DeathDisplay.Text = death;
+                        GamesPlayedDisplay.Text = gamesPlayed;
 
+                    }
+                    catch (Exception error)
+                    {
+                        Debug.WriteLine("Error : " + error.Message);
+                        UserNameDisplay.Text = "This username : " + username + " does not exist in database on choosen platform";
+                    }
                 }
-                catch (Exception error)
+                else if(database == "Local")
                 {
-                    Debug.WriteLine("Error : " + error.Message);
-                    UserNameDisplay.Text = "This username : " + username + " does not exist in database on choosen platform";
+                    try
+                    {
+                        //Prøve å sette inn lokale databasen her. Slik at når det blir valgt lokal database så starter denne.
+            
+                    }
+                    catch (Exception error)
+                    {
+                        Debug.WriteLine("Error : " + error.Message);
+                        UserNameDisplay.Text = "This username : " + username + " does not exist in database on choosen platform";
+                    }
+
                 }
             }
         }
 
-        private void Button_Back(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(MainPage));
-
-        }
-
         private void PlayerPlatform_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            // Add "using Windows.UI;" for Color and Colors.
             string platformChoosen = e.AddedItems[0].ToString();
             switch (platformChoosen)
             {
@@ -106,6 +117,20 @@ namespace StatTrack
         private void TextBlock_SelectionChanged_2(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void Database_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            string databaseChoosen = e.AddedItems[0].ToString();
+            switch (databaseChoosen)
+            {
+                case "Local":
+                    database = "Local";
+                    break;
+                case "Online":
+                    database = "Online";
+                    break;
+            }
         }
     }
 }

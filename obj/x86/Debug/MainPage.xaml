@@ -10,7 +10,7 @@
 
     <Grid>
         <!--TextBlocks-->
-        <TextBlock x:ConnectionId='2' Name="FrontPageTitle" HorizontalAlignment="Left" Margin="393,255,0,0" Text="Apex Legends" TextWrapping="Wrap" VerticalAlignment="Top" Height="219" Width="733"                                               FontSize="100"/>
+        <TextBlock x:ConnectionId='2' Name="FrontPageTitle" HorizontalAlignment="Left" Margin="393,255,0,0" Text="Frontpage Title" TextWrapping="Wrap" VerticalAlignment="Top" Height="219" Width="733"                                               FontSize="100"/>
         <TextBlock x:ConnectionId='3' HorizontalAlignment="Left" Margin="390,507,0,0" Text="Username :" TextWrapping="Wrap" VerticalAlignment="Top"                                                 FontSize=" 40"/>
         <TextBlock x:ConnectionId='4' Name="UserNameDisplay"  HorizontalAlignment="Left" Margin="643,694,0,0" Text="Stats Will show here." TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock x:ConnectionId='5' Name="KillsDisplay"  HorizontalAlignment="Left" Margin="643,722,0,0" Text="Kills" TextWrapping="Wrap" VerticalAlignment="Top"/>
@@ -30,6 +30,10 @@
             <x:String>Origin</x:String>
             <x:String>Playstation 4</x:String>
             <x:String>Xbox</x:String>
+        </ComboBox>
+        <ComboBox x:ConnectionId='11'  x:Name="DatabaseChoosen" Header="Database" PlaceholderText="Choose a Database" Width="200" Margin="845,575,0,0"                                              RenderTransformOrigin="3.175,3.909">
+            <x:String>Local</x:String>
+            <x:String>Online</x:String>
         </ComboBox>
 
     </Grid>
