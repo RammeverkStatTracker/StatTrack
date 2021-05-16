@@ -10,7 +10,7 @@
 
     <Grid>
         <!--TextBlocks-->
-        <TextBlock x:ConnectionId='2' Name="FrontPageTitle" HorizontalAlignment="Left" Margin="393,255,0,0" Text="Frontpage Title" TextWrapping="Wrap" VerticalAlignment="Top" Height="219" Width="733"                                               FontSize="100"/>
+        <TextBlock x:ConnectionId='2' Name="FrontPageTitle" TextAlignment="Center" HorizontalAlignment="Left" Margin="5,255,0,0" Text="Frontpage Title" TextWrapping="Wrap" VerticalAlignment="Top" Height="219" Width="1495"                                               FontSize="100"/>
         <TextBlock x:ConnectionId='3' HorizontalAlignment="Left" Margin="390,507,0,0" Text="Username :" TextWrapping="Wrap" VerticalAlignment="Top"                                                 FontSize=" 40"/>
         <TextBlock x:ConnectionId='4' Name="UserNameDisplay"  HorizontalAlignment="Left" Margin="643,694,0,0" Text="Stats Will show here." TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock x:ConnectionId='5' Name="KillsDisplay"  HorizontalAlignment="Left" Margin="643,722,0,0" Text="Kills" TextWrapping="Wrap" VerticalAlignment="Top"/>
@@ -24,7 +24,7 @@
         <!--Buttons-->
         <Button x:ConnectionId='9' Content="Search" Margin="672,643,0,0" VerticalAlignment="Top"                            />
 
-        <!-- Checkboxes-->
+        <!-- ComboBox-->
 
         <ComboBox x:ConnectionId='10'  x:Name="PlayerPlatform" Header="Platform" PlaceholderText="Choose a platform" Width="200" Margin="610,575,0,0"                                                    RenderTransformOrigin="3.175,3.909">
             <x:String>Origin</x:String>

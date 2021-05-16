@@ -712,3 +712,4 @@ C:\Users\Bass4Nation\source\repos\StatTrack\obj\x86\Release\ilc\intermediate\Sta
 C:\Users\Bass4Nation\source\repos\StatTrack\obj\x86\Release\ilc\intermediate\StatTrack.McgInterop\SafeTypes.g.cs
 C:\Users\Bass4Nation\source\repos\StatTrack\obj\x86\Release\ilc\intermediate\StatTrack.McgInterop\SharedStubs.g.cs
 C:\Users\Bass4Nation\source\repos\StatTrack\obj\x86\Release\ilc\intermediate\System.Private.StatTrack.Generated.dll
+C:\Users\Bass4Nation\source\repos\StatTrack\obj\x86\Release\StatTrack.csprojAssemblyReference.cache

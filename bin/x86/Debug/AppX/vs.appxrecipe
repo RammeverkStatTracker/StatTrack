@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Bass4Nation\source\repos\StatTrack\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-16T02:48:33.327</Modified>
+      <Modified>2021-05-16T14:29:19.830</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Bass4Nation\source\repos\StatTrack\bin\x86\Debug\StatTrack.exe">
       <PackagePath>entrypoint\StatTrack.exe</PackagePath>
-      <Modified>2021-05-16T02:48:32.874</Modified>
+      <Modified>2021-05-16T14:29:19.368</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Bass4Nation\.nuget\packages\microsoft.bcl.asyncinterfaces\5.0.0\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.dll">
       <PackagePath>Microsoft.Bcl.AsyncInterfaces.dll</PackagePath>
@@ -186,15 +186,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Bass4Nation\source\repos\StatTrack\bin\x86\Debug\StatTrack.xr.xml">
       <PackagePath>StatTrack.xr.xml</PackagePath>
-      <Modified>2021-05-13T18:52:23.626</Modified>
+      <Modified>2021-05-16T11:46:16.640</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Bass4Nation\source\repos\StatTrack\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-05-16T02:48:32.799</Modified>
+      <Modified>2021-05-16T13:51:57.232</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Bass4Nation\source\repos\StatTrack\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-05-16T02:48:32.799</Modified>
+      <Modified>2021-05-16T13:51:57.232</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -206,7 +206,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Bass4Nation\source\repos\StatTrack\bin\x86\Debug\Core\StatTrack.exe">
       <PackagePath>StatTrack.exe</PackagePath>
-      <Modified>2021-05-16T02:48:33.324</Modified>
+      <Modified>2021-05-16T14:29:19.827</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -1,10 +1,13 @@
 ﻿
 using System.Diagnostics;
+using System.Data.SqlClient;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Newtonsoft.Json;
 using System.Net;
 using System;
+using System.Data;
+using System.Collections.Generic;
 
 namespace StatTrack
 {
@@ -87,8 +90,78 @@ namespace StatTrack
                     try
                     {
                         FrontPageTitle.Text = "Local Database for Apex Legends";
-                        //Prøve å sette inn lokale databasen her. Slik at når det blir valgt lokal database så starter denne.
-            
+
+                        SqlConnectionStringBuilder connStringBuilder = new SqlConnectionStringBuilder
+                        {
+                            DataSource = @"donau.hiof.no",
+                            InitialCatalog = "kristoss",
+                            IntegratedSecurity = false,
+                            UserID = "kristoss",
+                            Password = "Ed:txh6B"
+                        };
+                        SqlConnection conn = new SqlConnection(connStringBuilder.ToString());
+
+                        SqlCommand cmdUserName = new SqlCommand("SELECT UserName FROM dbo.Apex WHERE UserName ='" + username + "' AND Platform ='" + platform + "'", conn);
+                        SqlCommand cmdKills = new SqlCommand("SELECT Kills FROM dbo.Apex WHERE UserName ='" + username + "' AND Platform ='" + platform + "'", conn);
+                        SqlCommand cmdDeath = new SqlCommand("SELECT Death FROM dbo.Apex WHERE UserName ='" + username + "' AND Platform ='" + platform + "'", conn);
+                        SqlCommand cmdLastCharachter = new SqlCommand("SELECT LastCharacter FROM dbo.Apex WHERE UserName ='" + username + "' AND Platform ='" + platform + "'", conn);
+
+                        string backupInfo = "No info in database or recived...";
+                        var kills = backupInfo; 
+                        var death = backupInfo;  
+                        var lastCharacter = backupInfo; 
+                        var userDisplay = backupInfo; 
+
+
+                            for (int i = 0; i < 4; i++)
+                            {
+                                if (i == 0)
+                                {
+                                    conn.Open();
+                                    userDisplay = (string)cmdUserName.ExecuteScalar();
+                                    conn.Close();
+                                }
+                                if (i == 1)
+                                {
+                                    conn.Open();
+                                    var killsResult = cmdKills.ExecuteScalar();
+                                    if(killsResult == null)
+                                    {
+                                    kills = backupInfo;
+                                    }
+                                    else
+                                    {
+                                    kills = killsResult.ToString();
+                                    }
+                                conn.Close();
+                                }
+                                if (i == 2)
+                                {
+                                    conn.Open();
+                                    var deathResult = cmdDeath.ExecuteScalar();
+                                    if(deathResult == null)
+                                    {
+                                        death = backupInfo;
+                                    }
+                                    else
+                                    {
+                                        death = deathResult.ToString();
+                                    }
+                                     conn.Close();
+                                }
+                                if (i == 3)
+                                {
+                                    conn.Open();
+                                    lastCharacter = (string)cmdLastCharachter.ExecuteScalar();
+                                    conn.Close();
+                                }
+
+                            }
+
+                        UserNameDisplay.Text = (string)userDisplay;
+                        KillsDisplay.Text = kills;
+                        DeathDisplay.Text = death;
+                        GamesPlayedDisplay.Text = (string)lastCharacter;
                     }
                     catch (Exception error)
                     {
