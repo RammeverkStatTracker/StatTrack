@@ -30,7 +30,6 @@ namespace StatTrack
 
         private void TextBlock_SelectionChanged_1(object sender, RoutedEventArgs e)
         {
-
         }
 
         private void UsernameInput(object sender, TextChangedEventArgs e)
@@ -40,7 +39,6 @@ namespace StatTrack
 
         private void Button_Click_Search(object sender, RoutedEventArgs e)
         {
-            string url = @"https://public-api.tracker.gg/v2/apex/standard/profile/" + platform + "/" + username + @"?TRN-Api-Key=620a071e-c41c-47ae-8e79-8f612c05e022";
 
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(platform))
             {
@@ -52,6 +50,10 @@ namespace StatTrack
                 {
                     try
                     {
+                        FrontPageTitle.Text = "Online Database for Apex Legends";
+
+                        string url = @"https://public-api.tracker.gg/v2/apex/standard/profile/" + platform + "/" + username + @"?TRN-Api-Key=620a071e-c41c-47ae-8e79-8f612c05e022";
+
                         Debug.WriteLine(platform);
                         string backupInfo = "No info in database or recived...";
                         //API url with key. It takes input from username textbox and attach it to url below.
@@ -84,6 +86,7 @@ namespace StatTrack
                 {
                     try
                     {
+                        FrontPageTitle.Text = "Local Database for Apex Legends";
                         //Prøve å sette inn lokale databasen her. Slik at når det blir valgt lokal database så starter denne.
             
                     }
@@ -112,11 +115,6 @@ namespace StatTrack
                     platform = "xbl";
                     break;
             }
-        }
-
-        private void TextBlock_SelectionChanged_2(object sender, RoutedEventArgs e)
-        {
-
         }
 
         private void Database_SelectionChanged(object sender, SelectionChangedEventArgs e)
