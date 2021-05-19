@@ -10,9 +10,25 @@
 
     <Grid>
         <!--TextBlocks-->
-        <TextBlock Name="FrontPageTitle" TextAlignment="Center" HorizontalAlignment="Left" Margin="5,255,0,0" Text="Frontpage Title" TextWrapping="Wrap" VerticalAlignment="Top" Height="219" Width="1495" SelectionChanged="TextBlock_SelectionChanged" FontSize="100"/>
+        <TextBlock Name="FrontPageTitle" TextAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0" Text="Frontpage Title" TextWrapping="Wrap" VerticalAlignment="Top" Height="486" Width="1495" SelectionChanged="TextBlock_SelectionChanged" FontSize="100"/>
         <TextBlock HorizontalAlignment="Left" Margin="390,507,0,0" Text="Username :" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged_1" FontSize=" 40"/>
         <TextBlock Name="UserNameDisplay"  HorizontalAlignment="Left" Margin="643,694,0,0" Text="Stats Will show here." TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock Name="TestInfdoOnline"  HorizontalAlignment="Left" Margin="23,520,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="118" Width="209" Text="
+   Usernames to online database.
+                   Bass4Nation_B4N == Origin
+                   Die-Reichtangle == Origin
+                   Bass4Nation_YT == Playstation 4
+                   Nadaeu == Xbox
+                   " RenderTransformOrigin="0.488,1.271" 
+                   />
+        <TextBlock Name="TestInfoLocal"  HorizontalAlignment="Left" Margin="25,647,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="118" Width="209" Text="
+   Usernames to Local database.
+                   Bass4Nation_B4N == Origin
+                   FyzzyCookie == Origin
+                   MoneyCannon == Playstation 4
+                   Slopeiz == Xbox
+                   " 
+                   />
         <TextBlock Name="KillsDisplay"  HorizontalAlignment="Left" Margin="643,722,0,0" Text="Kills" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="597,722,0,0" Text="Kills : " TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock Name="DeathDisplay"  HorizontalAlignment="Left" Margin="643,746,0,0" Text="Death" TextWrapping="Wrap" VerticalAlignment="Top"/>
@@ -30,7 +46,7 @@
             <x:String>Playstation 4</x:String>
             <x:String>Xbox</x:String>
         </ComboBox>
-        <ComboBox  x:Name="DatabaseChoosen" Header="Database" PlaceholderText="Choose a Database" Width="200" Margin="845,575,0,0" SelectionChanged="Database_SelectionChanged" RenderTransformOrigin="3.175,3.909">
+        <ComboBox  x:Name="DatabaseChoosen" Header="Database" PlaceholderText="Choose a Database" Width="200" Margin="390,575,0,0" SelectionChanged="Database_SelectionChanged" RenderTransformOrigin="3.175,3.909">
             <x:String>Local</x:String>
             <x:String>Online</x:String>
         </ComboBox>
