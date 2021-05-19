@@ -17,7 +17,7 @@
         <TextBlock HorizontalAlignment="Left" Margin="597,722,0,0" Text="Kills : " TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock Name="DeathDisplay"  HorizontalAlignment="Left" Margin="643,746,0,0" Text="Death" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="585,746,0,0" Text="Death : " TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="1.75,0.474"/>
-        <TextBlock Name="GamesPlayedDisplay"  HorizontalAlignment="Left" Margin="643,766,0,0" Text="Character" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock Name="LastPlayedCharacter"  HorizontalAlignment="Left" Margin="643,766,0,0" Text="Character" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="501,766,0,0" Text="Character Last used :" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <!--TextBoxes-->
         <TextBox Name="Username" HorizontalAlignment="Left" Margin="590,520,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="235" TextChanged="UsernameInput" RenderTransformOrigin="0.511,-0.778"/>
@@ -25,7 +25,6 @@
         <Button Content="Search" Margin="672,643,0,0" VerticalAlignment="Top" Click="Button_Click_Search"/>
 
         <!-- ComboBox-->
-
         <ComboBox  x:Name="PlayerPlatform" Header="Platform" PlaceholderText="Choose a platform" Width="200" Margin="610,575,0,0" SelectionChanged="PlayerPlatform_SelectionChanged" RenderTransformOrigin="3.175,3.909">
             <x:String>Origin</x:String>
             <x:String>Playstation 4</x:String>

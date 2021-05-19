@@ -1,12 +1,12 @@
 ﻿namespace StatTrack
 {
     using System;
-    using System.Collections.Generic;
-
     using System.Globalization;
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
+    
 
+    // All code here is from a convert json to C# webpage. Because Tracker.gg database is a big one.
     public partial class Datadb
     {
         [JsonProperty("data")]
