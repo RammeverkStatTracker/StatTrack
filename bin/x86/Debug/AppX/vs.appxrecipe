@@ -30,21 +30,21 @@
     <AppXManifest Include="C:\Users\Bass4Nation\source\repos\StatTrack\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-20T11:59:26.117</Modified>
+      <Modified>2021-05-20T16:53:15.803</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Bass4Nation\source\repos\StatTrack\bin\x86\Debug\StatTrack.exe">
       <PackagePath>entrypoint\StatTrack.exe</PackagePath>
-      <Modified>2021-05-20T11:59:25.560</Modified>
+      <Modified>2021-05-20T16:53:14.600</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Bass4Nation\.nuget\packages\microsoft.bcl.asyncinterfaces\5.0.0\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.dll">
       <PackagePath>Microsoft.Bcl.AsyncInterfaces.dll</PackagePath>
       <Modified>2020-10-19T16:40:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Bass4Nation\.nuget\packages\microsoft.data.sqlite.core\5.0.4\lib\netstandard2.0\Microsoft.Data.Sqlite.dll">
+    <AppxPackagedFile Include="C:\Users\Bass4Nation\.nuget\packages\microsoft.data.sqlite.core\5.0.6\lib\netstandard2.0\Microsoft.Data.Sqlite.dll">
       <PackagePath>Microsoft.Data.Sqlite.dll</PackagePath>
-      <Modified>2021-02-18T21:53:08.000</Modified>
+      <Modified>2021-04-13T18:58:02.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Bass4Nation\.nuget\packages\microsoft.extensions.configuration\5.0.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll">
       <PackagePath>Microsoft.Extensions.Configuration.dll</PackagePath>
@@ -94,9 +94,9 @@
       <PackagePath>Microsoft.Extensions.Primitives.dll</PackagePath>
       <Modified>2020-10-19T16:48:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Bass4Nation\.nuget\packages\newtonsoft.json\12.0.3\lib\netstandard2.0\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="C:\Users\Bass4Nation\.nuget\packages\newtonsoft.json\13.0.1\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
-      <Modified>2019-11-08T23:56:44.000</Modified>
+      <Modified>2021-03-17T19:03:36.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Bass4Nation\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.12\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -190,11 +190,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Bass4Nation\source\repos\StatTrack\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-05-19T22:35:18.645</Modified>
+      <Modified>2021-05-20T16:53:14.493</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Bass4Nation\source\repos\StatTrack\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-05-20T11:59:25.472</Modified>
+      <Modified>2021-05-20T16:53:14.493</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -202,11 +202,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Bass4Nation\source\repos\StatTrack\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-05-20T11:52:23.147</Modified>
+      <Modified>2021-05-20T16:53:15.185</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Bass4Nation\source\repos\StatTrack\bin\x86\Debug\Core\StatTrack.exe">
       <PackagePath>StatTrack.exe</PackagePath>
-      <Modified>2021-05-20T11:59:26.111</Modified>
+      <Modified>2021-05-20T16:53:15.797</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

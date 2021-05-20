@@ -31,25 +31,25 @@ namespace StatTrack
 
         private void Button_Click_Search(object sender, RoutedEventArgs e)
         {
-            // Checking if any fields are empty, if sp it will print that below.
+            // Checking if any fields are empty, if so it will print that below.
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(platform) || string.IsNullOrEmpty(database))
             {
                 UserNameDisplay.Text = "Need to type Username, Platform and Database";
             }
             else
             {   
-                if(database == "Online")// If Tracker.gg database/Online is choosen.
+                if(database == "Online")// If Tracker.gg database/Online is chosen.
                 {
                     try
                     {  
-                        FrontPageTitle.Text = "Online Database for Apex Legends"; // Just so it is easier to see that the online database is the choosen one.
+                        FrontPageTitle.Text = "Online Database for Apex Legends"; // Just so it is easier to see that the online database is the chosen one.
                            
                         // API borrowed from tracker.gg that takes platfrom and username and adds it to the url
                         string url = @"https://public-api.tracker.gg/v2/apex/standard/profile/" + platform + "/" + username + @"?TRN-Api-Key=620a071e-c41c-47ae-8e79-8f612c05e022";
 
                         string backupInfo = "No info in database or recived..."; // If it can't find any info. 
 
-                        Debug.WriteLine(url); // Just a nice print to have. So inn console you can check what info it are trying to read. It will show a link that it tries to check.
+                        Debug.WriteLine(url); // Just a nice print to have. So in console you can check what info it are trying to read. It will show a link that it tries to check.
 
                         var json = new WebClient().DownloadString(url); // Gets info to json from url above
 
@@ -57,7 +57,7 @@ namespace StatTrack
                         var kill = JsonConvert.DeserializeObject<Segment>(json); //Converting info from json to objects in datadb.cs
 
                         string userDisplay = allInfo?.Data?.PlatformInfo?.PlatformUserId ?? backupInfo; // Displaying username on the front page.
-                        string kills = kill?.Stats?.Kills?.DisplayValue ?? backupInfo; //1. Have found out that APEX is wierd with it's info. 
+                        string kills = kill?.Stats?.Kills?.DisplayValue ?? backupInfo; //1. Have found out that APEX is weird with it's info. 
                         string death = kill?.Stats?.Kills?.DisplayValue ?? backupInfo;  //2. Our database won't get it if it's not shown in the player banner in-game. Explanation in the document.
                         string lastPlayedCharacter = allInfo?.Data?.Metadata?.ActiveLegendName ?? backupInfo; // Displaying last used legend(character)
 
@@ -72,14 +72,14 @@ namespace StatTrack
                     {
                         Debug.WriteLine("Error : " + error.Message); 
                         UserNameDisplay.Text = "This username : " + username + " does not exist in database on choosen platform or database";
-                        // If any error it prints it in the console, and if it can't find username in choosen platform/databse, it will show it on the fontpage
+                        // If any error it prints it in the console, and if it can't find username in chosen platform/database, it will show it on the fontpage
                     }
                 }
-                else if(database == "Local")// If local database is choosen. Using a database we got to use in .NET lecture.
+                else if(database == "Local")// If local database is chosen. Using a database we got to use in .NET lecture.
                 {
                     try
                     {
-                        FrontPageTitle.Text = "Local Database for Apex Legends"; // Just so it is easier to see that the local database is the choosen one.
+                        FrontPageTitle.Text = "Local Database for Apex Legends"; // Just so it is easier to see that the local database is the chosen one.
 
                         SqlConnectionStringBuilder connStringBuilder = new SqlConnectionStringBuilder
                         {
@@ -117,7 +117,7 @@ namespace StatTrack
                                     conn.Open();
                                     var killsResult = cmdKills.ExecuteScalar();
                                     if (killsResult == null) // If it can't find info it will print backupInfo.
-                                    { //  Had to use if statment because it should get a Int, but the code didn't like that.
+                                    { //  Had to use if statement because it should get a Int, but the code didn't like that.
                                         kills = backupInfo;
                                     }
                                     else
@@ -158,7 +158,7 @@ namespace StatTrack
                     {
                         Debug.WriteLine("Error : " + error.Message);
                         UserNameDisplay.Text = "This username : " + username + " does not exist in database on choosen platform or database";
-                        // If any error it prints it in the console, and if it can't find username in choosen platform/databse, it will show it on the fontpage
+                        // If any error it prints it in the console, and if it can't find username in chosen platform/database, it will show it on the fontpage
                     }
 
                 }
