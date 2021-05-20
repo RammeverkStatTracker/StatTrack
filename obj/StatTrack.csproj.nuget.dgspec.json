@@ -41,7 +41,7 @@
           "dependencies": {
             "Microsoft.Data.Sqlite": {
               "target": "Package",
-              "version": "[5.0.4, )"
+              "version": "[5.0.6, )"
             },
             "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
@@ -57,7 +57,7 @@
             },
             "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[12.0.3, )"
+              "version": "[13.0.1, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",

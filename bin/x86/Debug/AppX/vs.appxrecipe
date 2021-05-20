@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\Bass4Nation\source\repos\StatTrack\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>D5038D63511AF705923DC4AA3DC5A437F3FFD06FC80A51C8D8A3EF293F080156</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>A2CC3E7DA4C6917D7BF31648444C930B46EF9476838BFE2F76F698D7292F4AC3</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>81377601-cd42-420a-8612-11e77ceac61f_1.0.0.0_x86__g140dk7hyccaj</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>81377601-cd42-420a-8612-11e77ceac61f_g140dk7hyccaj!App</RegisteredUserModeAppID>
     <RegisteredPackageID>81377601-cd42-420a-8612-11e77ceac61f</RegisteredPackageID>
@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Bass4Nation\source\repos\StatTrack\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-19T22:36:57.009</Modified>
+      <Modified>2021-05-20T11:59:26.117</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Bass4Nation\source\repos\StatTrack\bin\x86\Debug\StatTrack.exe">
       <PackagePath>entrypoint\StatTrack.exe</PackagePath>
-      <Modified>2021-05-19T22:36:56.531</Modified>
+      <Modified>2021-05-20T11:59:25.560</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Bass4Nation\.nuget\packages\microsoft.bcl.asyncinterfaces\5.0.0\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.dll">
       <PackagePath>Microsoft.Bcl.AsyncInterfaces.dll</PackagePath>
@@ -194,7 +194,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Bass4Nation\source\repos\StatTrack\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-05-19T22:36:56.445</Modified>
+      <Modified>2021-05-20T11:59:25.472</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -202,11 +202,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Bass4Nation\source\repos\StatTrack\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-05-13T18:48:44.726</Modified>
+      <Modified>2021-05-20T11:52:23.147</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Bass4Nation\source\repos\StatTrack\bin\x86\Debug\Core\StatTrack.exe">
       <PackagePath>StatTrack.exe</PackagePath>
-      <Modified>2021-05-19T22:36:57.005</Modified>
+      <Modified>2021-05-20T11:59:26.111</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
